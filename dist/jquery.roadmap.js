@@ -47,7 +47,15 @@
 			var html = '<li class="' + settings.rootClass + '__events__event">' + settings.eventTemplate + '</li>';
 			html = html.replace('####DATE###', event.date);
 			html = html.replace('####CONTENT###', event.content);
-
+		   html = html.replace('####OPTION1###', event.option1);
+			html = html.replace('####OPTION2###', event.option2);
+			html = html.replace('####OPTION3###', event.option3);
+			html = html.replace('####OPTION4###', event.option4);
+			html = html.replace('####OPTION5###', event.option5);
+			html = html.replace('####OPTION6###', event.option6);
+			html = html.replace('####OPTION7###', event.option7);
+			html = html.replace('####OPTION8###', event.option8);
+			html = html.replace('####OPTION9###', event.option9);
 			var left = 100 / (settings.eventsPerSlide - 1) * key;
 
 			return $(html).css('left', left + '%');
